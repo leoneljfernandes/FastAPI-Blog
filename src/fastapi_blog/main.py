@@ -1,6 +1,8 @@
 from pathlib import Path
 from typing import Annotated
 
+from .routers import posts
+
 # main.py is at src/fastapi_blog/main.py
 # .parent.parent.parent reaches the project root (fastapi_blog/)
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -24,7 +26,7 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from . import models
 from .database import engine, get_db
-from .routers import posts, users
+from .routers import users
 
 from .config import settings 
 

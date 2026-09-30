@@ -7,10 +7,11 @@ from sqlalchemy import delete, select, update
 
 from . import models
 from .database import AsyncSessionLocal, engine
-from .image_utils import PROFILE_PICS_DIR
 from .main import app
 
-POPULATE_IMAGES_DIR = Path("populate_images")
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+POPULATE_IMAGES_DIR = Path(__file__).resolve().parent / "populate_images"
+PROFILE_PICS_DIR = BASE_DIR / "media" / "profile_pics"  # legacy local storage
 
 USERS = [
     {

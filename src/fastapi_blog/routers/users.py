@@ -10,7 +10,7 @@ from PIL import UnidentifiedImageError
 
 from starlette.concurrency import run_in_threadpool
 
-from .. image_utils import delete_profile_image, process_profile_image, upload_profile_image
+from ..image_utils import delete_profile_image, process_profile_image, upload_profile_image
 
 from .. import models
 from ..database import get_db

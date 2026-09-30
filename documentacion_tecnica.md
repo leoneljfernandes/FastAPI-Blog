@@ -1,5 +1,4 @@
-# Documentación Técnica — FastAPI Blog
-> **Propósito**: Material de estudio y preparación para entrevistas técnicas de Backend.  
+# FastAPI Blog
 > Proyecto: Blog fullstack con API REST + renderizado de templates Jinja2.
 
 ---
